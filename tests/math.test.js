@@ -20,4 +20,10 @@ describe("Math module", () => {
     const expected = 2;
     expect(result).toBe(expected);
   });
+
+  test("subtract 3 from 10 to make 7", () => {
+    const result = subtract(10, 3);
+    const expected = 7;
+    expect(result).toBe(expected);
+  });
 });
