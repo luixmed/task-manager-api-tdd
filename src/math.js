@@ -5,5 +5,5 @@ export function add(a, b) {
 }
 
 export function subtract(a, b) {
-  return 2;
+  return a - b;
 }
