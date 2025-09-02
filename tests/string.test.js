@@ -1,5 +1,5 @@
 // tests/string.test.js
-import { reverseStrin, isPalindrome } from "../src/string.js";
+import { reverseString, isPalindrome } from "../src/string.js";
 
 describe("String Utilities", () => {
   test("reverses a string correctly", () => {
