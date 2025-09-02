@@ -18,8 +18,7 @@ describe("String Utilities", () => {
 
   test("returns true for a simple palindrome", () => {
     const input = "racecar";
-    const expected = "racecar";
     const result = isPalindrome(input);
-    expect(result).toBe(expected);
+    expect(result).toBe(true);
   });
 });
