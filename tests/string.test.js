@@ -21,4 +21,10 @@ describe("String Utilities", () => {
     const result = isPalindrome(input);
     expect(result).toBe(true);
   });
+
+  test("returns false for a word that is not a palindrome", () => {
+    const input = "hello";
+    const result = isPalindrome(input);
+    expect(result).toBe(false);
+  });
 });
