@@ -1,5 +1,5 @@
 // tests/string.test.js
-import { reverseString } from "../src/string.js";
+import { reverseStrin, isPalindrome } from "../src/string.js";
 
 describe("String Utilities", () => {
   test("reverses a string correctly", () => {
@@ -13,6 +13,13 @@ describe("String Utilities", () => {
     const input = "world";
     const expected = "dlrow";
     const result = reverseString(input);
+    expect(result).toBe(expected);
+  });
+
+  test("returns true for a simple palindrome", () => {
+    const input = "racecar";
+    const expected = "racecar";
+    const result = isPalindrome(input);
     expect(result).toBe(expected);
   });
 });
