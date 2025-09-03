@@ -9,3 +9,7 @@ export function isPalindrome(str) {
   // 2. Compare the cleaned string to its reverse
   return cleanedStr === reverseString(cleanedStr);
 }
+
+export function truncateString(str, maxLength) {
+  return str;
+}
