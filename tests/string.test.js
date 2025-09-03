@@ -1,5 +1,5 @@
 // tests/string.test.js
-import { reverseString, isPalindrome } from "../src/string.js";
+import { reverseString, isPalindrome, truncateString } from "../src/string.js";
 
 describe("String Utilities", () => {
   test("reverses a string correctly", () => {
@@ -32,5 +32,12 @@ describe("String Utilities", () => {
     const input = "A man, a plan, a canal, Panama!";
     const result = isPalindrome(input);
     expect(result).toBe(true);
+  });
+
+  test("truncates a string correctly", () => {
+    const input = ["Hello", 10];
+    const expected = "Hello";
+    const result = truncateString(...input);
+    expect(result).toBe(expected);
   });
 });
