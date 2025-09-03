@@ -4,5 +4,8 @@ export function reverseString(str) {
 }
 
 export function isPalindrome(str) {
-  return str === reverseString(str);
+  // 1. Clean the string: lowercase it and remove non-alphanumeric chars
+  const cleanedStr = str.toLowerCase().replace(/[^a-z0-9]/g, "");
+  // 2. Compare the cleaned string to its reverse
+  return cleanedStr === reverseString(cleanedStr);
 }
