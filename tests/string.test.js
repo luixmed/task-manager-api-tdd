@@ -27,4 +27,10 @@ describe("String Utilities", () => {
     const result = isPalindrome(input);
     expect(result).toBe(false);
   });
+
+  test("returns true for a complex palindrome ignoring case and non-alphanumeric characters", () => {
+    const input = "A man, a plan, a canal, Panama!";
+    const result = isPalindrome(input);
+    expect(result).toBe(true);
+  });
 });
