@@ -40,4 +40,11 @@ describe("String Utilities", () => {
     const result = truncateString(...input);
     expect(result).toBe(expected);
   });
+
+  test("returns the truncate text for a text that is longer than maxLength", () => {
+    const input = ["Hello, world!", 10];
+    const expected = "Hello...";
+    const result = truncateString(...input);
+    expect(result).toBe(expected);
+  });
 });
