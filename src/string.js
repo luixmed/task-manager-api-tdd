@@ -4,5 +4,5 @@ export function reverseString(str) {
 }
 
 export function isPalindrome(str) {
-  return true;
+  return str === reverseString(str);
 }
